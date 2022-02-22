@@ -76,7 +76,7 @@
                 rm -rf release
             - copyartifact:
                 project: ceph-setup
-                filter: 'dist/**'
+                filter: 'ceph-build/ansible/ceph/dist/**'
                 which-build: multijob-build
             - inject:
                 properties-file: ${WORKSPACE}/dist/sha1
